@@ -62,7 +62,7 @@
 \fi
 \fi
 
-\newcommand{\mb}[1]{\pmb{#1}}
+% \newcommand{\mb}[1]{\pmb{#1}}
 \RequirePackage{zhnumber}
 \RequirePackage{pifont}
 
@@ -153,7 +153,7 @@
 \RequirePackage{enumitem}
 \RequirePackage{algorithm2e}
 \RequirePackage{etoolbox}
-\RequirePackage{newfloat}
+\RequirePackage{newfloat} %user may use to define new floating environments
 \RequirePackage[resetlabels]{multibib}
 \RequirePackage[nottoc]{tocbibind}
 \RequirePackage{everypage}
@@ -253,8 +253,8 @@
 \setlength{\headheight}{15pt}
 
 \pagestyle{fancy}
-\linespread{1.391}
-\setlength\parindent{24pt}
+\linespread{1.389}% ==20磅
+\setlength\parindent{24pt}% ==2em
 \titlespacing{\chapter}{0pt}{0pt}{18pt}
 \titlespacing{\section}{0pt}{18pt}{6pt}
 \titlespacing{\subsection}{0pt}{12pt}{6pt}
@@ -784,17 +784,17 @@ UDC\textsuperscript{ 注1} \uline{\hspace{2.5in}} \\[12bp]
 
 \newcites{accomplish}{攻读\chinesedegreename{}学位期间取得的成果}
 
-\newenvironment{thesisaccomplish}{
-  \renewcommand{\bibname}{攻读\chinesedegreename{}学位期间取得的成果}
-  \begin{thebibliography}{lo}
-  \interlinepenalty=10000
-  \begin{spacing}{1.667}
-  \thispagestyle{fancy}
-  \small
-}{
-  \end{spacing}\end{thebibliography}
-  \renewcommand{\bibname}{参考文献}
-}
+% \newenvironment{thesisaccomplish}{
+%   \renewcommand{\bibname}{攻读\chinesedegreename{}学位期间取得的成果}
+%   \begin{thebibliography}{lo}
+%   \interlinepenalty=10000
+%   \begin{spacing}{1.667}
+%   \thispagestyle{fancy}
+%   \small
+% }{
+%   \end{spacing}\end{thebibliography}
+%   \renewcommand{\bibname}{参考文献}
+% }
 
 \newcommand{\thesisloadaccomplish}[1]{
   \nociteaccomplish{*}
