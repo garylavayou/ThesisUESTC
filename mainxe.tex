@@ -1,0 +1,33 @@
+\documentclass[doctor]{thesis-uestc}
+
+\title{关于模板的用法示例和问题测试}
+\author{王刚}
+\studentid{201311260112}
+
+\begin{document}
+
+\thesisglossarylist
+
+\thesischapterexordium
+本文档用于说明模板中一些命令，以及展示论文写作中常用功能。
+用于论文写作的样例文档，请参考``main.tex''和``main\_multifile.tex''。
+
+
+\chapter{术语缩略词}
+
+%% 定义术语
+\newglossaryentry{Linux}
+{
+  name=Linux,
+  description={is a generic term referring to the family of Unix-like
+    computer operating systems that use the Linux kernel},
+  plural=Linuces
+}
+%% 定义术语。
+\newacronym[description=逻辑卷管理器]{lvm}{LVM}{Logical Volume Manager}
+
+%% 使用术语和缩略词
+\gls{Linux}是现代操作系统之一。
+\gls{lvm}是计算机磁盘管理的重要功能，（\gls{lvm}）使得多个磁盘可同时工作在同一计算机上。
+
+\end{document}

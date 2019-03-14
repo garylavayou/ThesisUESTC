@@ -15,3 +15,6 @@
 !./example.pdf
 
 .DS_Store
+*.glg
+*.gls
+*.glsdefs

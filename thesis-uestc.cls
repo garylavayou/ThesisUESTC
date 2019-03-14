@@ -86,7 +86,7 @@
 \renewcommand*{\glossarypreamble}{\vspace{-9pt}}
 
 \newacronymstyle{acronym-uestc}{
-  \ifglshaslong{\glslabel}{\glsgenacfmt}{\glsgenentryfmt}
+  \ifglshaslong{\glslabel}{\glsgenacfmt}{\glsgenentryfmt}%
 }{
   \renewcommand*{\GenericAcronymFields}{
     first={\the\glslongtok\space\protect\paren{\the\glsshorttok}},
@@ -117,17 +117,17 @@
   \glossentry{##2}{##3}}
 }
 
-\defglsentryfmt{%
-  \ifglshaslong{\glslabel}{%
-    \glsgenacfmt%
-  }{%
-    \ifglsused{\glslabel}{%
-      \glsgenentryfmt%
-    }{%
-      \glsgenentryfmt%
-    }%
-  }%
-}
+% \defglsentryfmt{%
+%   \ifglshaslong{\glslabel}{%
+%     \glsgenacfmt%
+%   }{%
+%     \ifglsused{\glslabel}{%
+%       \glsgenentryfmt%
+%     }{%
+%       \glsgenentryfmt%
+%     }%
+%   }%
+% }
 
 \newcommand{\thesisglossarylist}{
   \newpage
