@@ -31,12 +31,12 @@
 \RequirePackage{array}
 \RequirePackage{setspace}
 \RequirePackage{multirow}
-\RequirePackage[tbtags]{amsmath}
-\RequirePackage{amssymb}
-\RequirePackage{amsthm}
 \RequirePackage{lmodern}
-\RequirePackage{mathptmx}
-\RequirePackage{bm}
+\RequirePackage[tbtags]{amsmath}% avoid [tbtags] clash with <newtxmath>
+\RequirePackage{amssymb,bm}
+\RequirePackage{amsthm}%place it before loading <newtxmath>
+% "smallerops" causes big operators except integrals to render 20% less tall
+\RequirePackage[cmintegrals,smallerops]{newtxmath}%requires <amsmath> inside
 \RequirePackage{fontspec}
 
 \RequirePackage{xeCJK}

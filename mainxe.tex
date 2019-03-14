@@ -1,4 +1,10 @@
 \documentclass[doctor]{thesis-uestc}
+\setCJKmonofont{Courier New}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  urlcolor=cyan
+}
 
 \title{关于模板的用法示例和问题测试}
 \author{王刚}
@@ -12,6 +18,25 @@
 本文档用于说明模板中一些命令，以及展示论文写作中常用功能。
 用于论文写作的样例文档，请参考``main.tex''和``main\_multifile.tex''。
 
+\chapter{数学公式}
+
+数学字体采用\texttt{newtxmath}代替原模板采用的\texttt{mathptmx}，使手写体更加工整。
+如果不喜欢当前类型，可以选择原模板的字体设置（参考\href{https://github.com/x-magus/ThesisUESTC/issues/58}{x-magus/ThesisUESTC {\#}58}）。
+另外，采用\texttt{newtxmath}也可以避免\texttt{mathptmx}不支持加粗字体（不会出错，但会产生警告）。
+
+\section{字母和符号}
+
+小写字母：\(abcdefghijklmnopqrstuvwxyz\)
+
+大写字母：\(ABCDEFGHIJKLMNOPQRSTUVWXYZ\)
+
+手写体：~~~~\(\mathcal{ABCDEFGHIJKLMNOPQRSTUVWXYZ}\)
+
+双线：~~~~~~~~\(\mathbb{ABCDEFGHIJKLMNOPQRSTUVWXYZ}\)
+
+粗体正体：\(\mathbf{ABCDEFGHIJKLMNOPQRSTUVWXYZ}\)
+
+粗体斜体：\(\bm{ABCDEFGHIJKLMNOPQRSTUVWXYZ}\)
 
 \chapter{术语缩略词}
 
